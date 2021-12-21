@@ -24,9 +24,8 @@ public class FragmentMoods extends Fragment {
 
     ImageView verygood, soandso, sad, angry;
     public TextView vgclicks, sasclicks, sadclicks, angryclicks;
-    public int counter1 = 0, counter2 = 0, counter3 = 0, counter4 = 0;
-    public int counter5 = counter1 + counter2 + counter3 + counter4;
-    public int counter6;
+    public static int counter1 = 0, counter2 = 0, counter3 = 0, counter4 = 0;
+    public static int counter5 = counter1 + counter2 + counter3 + counter4;
     SharedPreferences sp1, sp11, sp2, sp3, sp4;
     String klikovi1, klikovi2, klikovi3, klikovi4;
     public int CurrentProgress = 0;
@@ -64,9 +63,9 @@ public class FragmentMoods extends Fragment {
                 editor.putString("VGclicks", String.valueOf(klikovi1));
                 editor.commit();
 
-                CurrentProgress = CurrentProgress + 1;
+                CurrentProgress = CurrentProgress + counter1/counter5*100;
                 progressBar.setProgress(CurrentProgress);
-                progressBar.setMax(10);
+                progressBar.setMax(100);
 
                 SharedPreferences.Editor editor1 = sp11.edit();
                 editor1.putInt("currentprogress11", CurrentProgress);
