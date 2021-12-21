@@ -63,13 +63,13 @@ public class FragmentMoods extends Fragment {
                 editor.putString("VGclicks", String.valueOf(klikovi1));
                 editor.commit();
 
-//                CurrentProgress = CurrentProgress + counter1/counter5*100;
-//                progressBar.setProgress(CurrentProgress);
-//                progressBar.setMax(100);
-//
-//                SharedPreferences.Editor editor1 = sp11.edit();
-//                editor1.putInt("currentprogress11", CurrentProgress);
-//                editor1.apply();
+                CurrentProgress = CurrentProgress + counter1/counter5*100;
+                progressBar.setProgress(CurrentProgress);
+                progressBar.setMax(100);
+
+                SharedPreferences.Editor editor1 = sp11.edit();
+                editor1.putInt("currentprogress11", CurrentProgress);
+                editor1.apply();
 
             }
         });
