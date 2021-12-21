@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/so_and_so"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_above="@+id/angry_angry"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="228dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="48dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:srcCompat="@drawable/soandsomood" />
+
+    <ImageView
+        android:id="@+id/sad_sad"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="164dp"
+        android:layout_toStartOf="@+id/angry_angry"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:srcCompat="@drawable/sadmood" />
+
+    <ImageView
+        android:id="@+id/very_good"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_above="@+id/sad_sad"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="49dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:srcCompat="@drawable/verygoodmood" />
+
+    <ImageView
+        android:id="@+id/angry_angry"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="164dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:srcCompat="@drawable/angrymood" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="498dp"
+        android:fontFamily="@font/poppins_light"
+        android:includeFontPadding="false"
+        android:text="HowAreYou"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="54dp"
+        android:background="#000000"
+        android:backgroundTint="#CDC0C0"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="clip_horizontal|center_horizontal|center_vertical"
+        android:text="ADV"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/verigudbrojklikova"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="322dp"
+        android:text="0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/sasbrojklikova"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="321dp"
+        android:paddingStart="22dp"
+        android:text="0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/saddbrojklikova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="142dp"
+        android:text="0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/angribrojklikova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="144dp"
+        android:text="0"
+        android:visibility="invisible" />
+
+</RelativeLayout>

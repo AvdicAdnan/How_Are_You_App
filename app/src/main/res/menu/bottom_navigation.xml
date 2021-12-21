@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_anno"
+        android:icon="@drawable/ic_baseline_notes_24"
+        android:title="Annotations">
+
+    </item>
+    <item
+        android:id="@+id/nav_moods"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_stat"
+        android:icon="@drawable/ic_baseline_dynamic_feed_24"
+        android:title="Statistics">
+
+    </item>
+
+
+</menu>
